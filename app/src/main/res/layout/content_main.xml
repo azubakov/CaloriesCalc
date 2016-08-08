@@ -54,13 +54,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etQuantityWater"
-        android:hint="Quantity water per day in gr."
+        android:hint="Quantity water per day in ml."
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
         android:layout_below="@+id/etCaloriesMinus"
         android:inputType="numberDecimal"
         />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWeightFood"
+        android:hint="Weight food per day in gr."
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etQuantityWater"
+        android:inputType="numberDecimal"
+        />
 
 
     <EditText
@@ -70,7 +80,7 @@
         android:hint="@string/gender"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
-        android:layout_below="@+id/etQuantityWater"
+        android:layout_below="@+id/etWeightFood"
         android:inputType="number"
          />
 

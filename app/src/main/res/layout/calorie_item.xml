@@ -1,5 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+   <RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/layout"
+       android:layout_margin="10dp"
+       >
+
+   <ImageView
+       android:layout_width="150dp"
+       android:layout_height="210dp"
+       android:id="@+id/imgView"
+       android:src="@drawable/ic_accessibility_200dp"
+       />
+
+
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout1"
+        android:layout_alignBottom="@+id/imgView"
+        android:layout_alignTop="@+id/imgView"
+        android:layout_toRightOf="@+id/imgView"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="@string/date1"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/tvWater"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="@string/water"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCalorieGet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Calories+"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCalorieOut"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Calories-"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWeightFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="WeightFood"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="Weight"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textStyle="bold"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout2"
+        android:layout_alignBottom="@+id/linearlayout1"
+        android:layout_alignTop="@+id/linearlayout1"
+        android:layout_toRightOf="@+id/linearlayout1"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>-->
 
 </RelativeLayout>

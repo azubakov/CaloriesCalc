@@ -13,6 +13,7 @@ public class CalorieContract {
         public static final String COL_CALORIESPLUS = "caloriesplus";
         public static final String COL_CALORIESMINUS = "caloriesminus";
         public static final String COL_QUANTITY_WATER = "quantitywater";
+        public static final String COL_WEIGHT_FOOD = "weightfood";
         public static final String COL_GENDER = "gender";
         public static final String COL_WEIGHT = "weight";
         public static final String COL_AGE = "age";

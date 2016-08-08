@@ -16,5 +16,7 @@
     <string name="query">Que</string>
     <string name="delete">Del</string>
     <string name="title_activity_calorie_db">CalorieDBActivity</string>
+    <string name="date1">Date</string>
+    <string name="water">Water</string>
 
 </resources>

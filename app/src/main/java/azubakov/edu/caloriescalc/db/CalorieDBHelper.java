@@ -23,6 +23,7 @@ public class CalorieDBHelper extends SQLiteOpenHelper {
                                                            CalorieContract.Calorie.COL_CALORIESPLUS + " REAL , " +
                                                            CalorieContract.Calorie.COL_CALORIESMINUS + " REAL , " +
                                                            CalorieContract.Calorie.COL_QUANTITY_WATER + " REAL , " +
+                                                           CalorieContract.Calorie.COL_WEIGHT_FOOD + " REAL , " +
                                                            CalorieContract.Calorie.COL_GENDER + " INTEGER , " +
                                                            CalorieContract.Calorie.COL_WEIGHT + " REAL , " +
                                                            CalorieContract.Calorie.COL_AGE + " REAL , " +

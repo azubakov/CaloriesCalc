@@ -34,6 +34,7 @@ public class CalorieDAO {
         values.put(CalorieContract.Calorie.COL_CALORIESPLUS, c.getCaloriesplus());
         values.put(CalorieContract.Calorie.COL_CALORIESMINUS, c.getCaloriesminus());
         values.put(CalorieContract.Calorie.COL_QUANTITY_WATER, c.getQuantitywater());
+        values.put(CalorieContract.Calorie.COL_QUANTITY_WATER, c.getQuantitywater());
         values.put(CalorieContract.Calorie.COL_GENDER, c.getGender());
         values.put(CalorieContract.Calorie.COL_WEIGHT, c.getWeight());
         values.put(CalorieContract.Calorie.COL_AGE, c.getAge());
@@ -100,6 +101,7 @@ public class CalorieDAO {
         Double caloriesplus = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_CALORIESPLUS));
         Double caloriesminus = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_CALORIESMINUS));
         Double quantitywater = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_QUANTITY_WATER));
+        Double weightfood = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_QUANTITY_WATER));
         Integer gender = cursor.getInt(cursor.getColumnIndex(CalorieContract.Calorie.COL_GENDER));
         Double weight = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_WEIGHT));
         Double age = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_AGE));
@@ -107,7 +109,7 @@ public class CalorieDAO {
         Integer activity = cursor.getInt(cursor.getColumnIndex(CalorieContract.Calorie.COL_ACTIVITY));
 
 
-        return new Calorie(id, date, caloriesplus, caloriesminus,quantitywater, gender, weight, age, height,activity);
+        return new Calorie(id, date, caloriesplus, caloriesminus, quantitywater, weightfood, gender, weight, age, height,activity);
     }
 
 

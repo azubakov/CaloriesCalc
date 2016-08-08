@@ -13,6 +13,7 @@ public class Calorie {
     private Double caloriesplus;
     private Double caloriesminus;
     private Double quantitywater;
+    private Double weightfood;
     private Integer gender;
     private Double weight;
     private Double age;
@@ -20,12 +21,14 @@ public class Calorie {
     private Integer activity;
 
     public Calorie(String date, Double caloriesplus, Double caloriesminus,
-                   Double quantitywater, Integer gender, Double weight,
-                   Double age, Double height, Integer activity) {
+                   Double quantitywater, Double weightfood, Integer gender,
+                   Double weight, Double age, Double height,
+                   Integer activity) {
         this.date = date;
         this.caloriesplus = caloriesplus;
         this.caloriesminus = caloriesminus;
         this.quantitywater = quantitywater;
+        this.weightfood = weightfood;
         this.gender = gender;
         this.weight = weight;
         this.age = age;
@@ -34,13 +37,15 @@ public class Calorie {
     }
 
     public Calorie(String id, String date, Double caloriesplus,
-                   Double caloriesminus, Double quantitywater, Integer gender,
-                   Double weight, Double age, Double height, Integer activity) {
+                   Double caloriesminus, Double quantitywater, Double weightfood,
+                   Integer gender, Double weight, Double age, Double height,
+                   Integer activity) {
         this.id = id;
         this.date = date;
         this.caloriesplus = caloriesplus;
         this.caloriesminus = caloriesminus;
         this.quantitywater = quantitywater;
+        this.weightfood = weightfood;
         this.gender = gender;
         this.weight = weight;
         this.age = age;
@@ -86,6 +91,14 @@ public class Calorie {
 
     public void setQuantitywater(Double quantitywater) {
         this.quantitywater = quantitywater;
+    }
+
+    public Double getWeightfood() {
+        return weightfood;
+    }
+
+    public void setWeightfood(Double weightfood) {
+        this.weightfood = weightfood;
     }
 
     public Integer getGender() {
@@ -136,6 +149,7 @@ public class Calorie {
                 ", caloriesplus=" + caloriesplus +
                 ", caloriesminus=" + caloriesminus +
                 ", quantitywater=" + quantitywater +
+                ", weightfood=" + weightfood +
                 ", gender=" + gender +
                 ", weight=" + weight +
                 ", age=" + age +

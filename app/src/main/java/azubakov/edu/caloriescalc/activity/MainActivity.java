@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etCaloriesPlus;
     EditText etCaloriesMinus;
     EditText etQuantityWater;
+    EditText etWeightFood;
     TextView tvBmi;
     TextView tvResultBmi;
     TextView tvResult1DescriptionBmi;
@@ -132,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
         etCaloriesPlus = (EditText) findViewById(R.id.etCaloriesPlus);
         etCaloriesMinus = (EditText) findViewById(R.id.etCaloriesMinus);
         etQuantityWater = (EditText) findViewById(R.id.etQuantityWater);
+        etWeightFood = (EditText) findViewById(R.id.etWeightFood);
         tvBmi = (TextView) findViewById(R.id.tvBmi);
         tvResultBmi = (TextView) findViewById(R.id.tvResultBmi);
         tvResult1DescriptionBmi = (TextView) findViewById(R.id.tvResult1Bmi);
@@ -454,6 +456,12 @@ public class MainActivity extends AppCompatActivity {
         return QuantityWater;
     }
 
+    public Double getWeightFood()
+    {
+        String etWeightFoodString =  etWeightFood.getText().toString();
+        Double WeightFood = Double.valueOf(etWeightFoodString);
+        return WeightFood;
+    }
 
     public Integer getActivity()
     {
@@ -499,9 +507,9 @@ public class MainActivity extends AppCompatActivity {
             return;
 
         Calorie calorie = new Calorie(getDate(),
-                                      getCaloriePlus(), getCalorieMinus(),getQuantityWater() , getGender(),
-                                      getWeight(), getAge(), getHeight(),
-                                      getActivity());
+                                      getCaloriePlus(), getCalorieMinus(),getQuantityWater(),
+                                      getWeightFood(), getGender(), getWeight(),
+                                      getAge(), getHeight(), getActivity());
 
         CalorieDAO dao = new CalorieDAO(this);
         long insertedID = dao.insert(calorie);
@@ -516,6 +524,7 @@ public class MainActivity extends AppCompatActivity {
         etCaloriesPlus.setText("");
         etCaloriesMinus.setText("");
         etQuantityWater.setText("");
+        etWeightFood.setText("");
         etGender.setText("");
         etWeight.setText("");
         etAge.setText("");
@@ -545,8 +554,9 @@ public class MainActivity extends AppCompatActivity {
             return;
 
           Calorie calorie = new Calorie(getDate(),
-                  getCaloriePlus(), getCalorieMinus(),getQuantityWater(),  getGender(),
-                  getWeight(), getAge(), getHeight(), getActivity());
+                  getCaloriePlus(), getCalorieMinus(),getQuantityWater(),
+                  getWeightFood(),  getGender(), getWeight(),
+                  getAge(), getHeight(), getActivity());
 
         CalorieDAO dao = new CalorieDAO(this);
         int rowsAffected = dao.update("2", calorie);
