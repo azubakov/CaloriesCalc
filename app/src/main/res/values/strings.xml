@@ -10,10 +10,11 @@
     <string name="secondname">SecondName</string>
     <string name="date">Date</string>
     <string name="email">Email</string>
-    <string name="insert">Insert</string>
-    <string name="Query">Query</string>
-    <string name="update">Update</string>
-    <string name="query">query</string>
-    <string name="delete">Delete</string>
+    <string name="insert">Ins</string>
+    <string name="Query">Que</string>
+    <string name="update">Upd</string>
+    <string name="query">Que</string>
+    <string name="delete">Del</string>
+    <string name="title_activity_calorie_db">CalorieDBActivity</string>
 
 </resources>

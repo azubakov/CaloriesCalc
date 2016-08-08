@@ -28,31 +28,6 @@
         />
 
 
-
- <!--   <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etFirstName"
-        android:hint="@string/firstname"
-        android:layout_below="@+id/etDate"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:inputType="text"
-        />
-
-
-   <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etSecondName"
-        android:hint="@string/secondname"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_below="@+id/etFirstName"
-        android:inputType="text"
-        />-->
-
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/etQuantityWater"
-        android:hint="Quantity water in a day."
+        android:hint="Quantity water per day in gr."
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
         android:layout_below="@+id/etCaloriesMinus"
@@ -391,7 +366,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/update"
-            android:id="@+id/btnUpdate"
+            android:id="@+id/btnUpd"
             android:onClick="update"
             android:layout_weight="1"
             />
@@ -401,10 +376,18 @@
             android:layout_height="wrap_content"
             android:text="@string/delete"
             android:id="@+id/btnDelete"
-            android:onClick="Delete"
+            android:onClick="Del"
             android:layout_weight="1"
             />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Act"
+            android:id="@+id/btnChange"
+            android:onClick="NewActivity"
+            android:layout_weight="1"
+            />
 
         <ImageButton
            android:layout_width="50dp"
