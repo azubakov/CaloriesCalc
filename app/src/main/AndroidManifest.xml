@@ -12,16 +12,26 @@
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activity.CalorieRecyclerActivity"
+            android:label="@string/title_activity_calorie_db"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.CalorieDBActivity"
-            android:label="@string/title_activity_calorie_db"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.CaloriesDetailsActivity"></activity>
     </application>
 
 </manifest>

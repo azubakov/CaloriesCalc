@@ -34,7 +34,7 @@ public class CalorieDAO {
         values.put(CalorieContract.Calorie.COL_CALORIESPLUS, c.getCaloriesplus());
         values.put(CalorieContract.Calorie.COL_CALORIESMINUS, c.getCaloriesminus());
         values.put(CalorieContract.Calorie.COL_QUANTITY_WATER, c.getQuantitywater());
-        values.put(CalorieContract.Calorie.COL_QUANTITY_WATER, c.getQuantitywater());
+        values.put(CalorieContract.Calorie.COL_WEIGHT_FOOD, c.getWeightfood());
         values.put(CalorieContract.Calorie.COL_GENDER, c.getGender());
         values.put(CalorieContract.Calorie.COL_WEIGHT, c.getWeight());
         values.put(CalorieContract.Calorie.COL_AGE, c.getAge());
@@ -67,6 +67,7 @@ public class CalorieDAO {
     public Calorie query(String id) {
         //The Data set: The Query result:
         Cursor cursor = db.query(CalorieContract.Calorie.TABLE_NAME, null, " _id = ? ", new String[]{id}, null, null, null);
+        cursor.moveToFirst();
         return parseCursor(cursor);
     }
 
@@ -101,7 +102,7 @@ public class CalorieDAO {
         Double caloriesplus = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_CALORIESPLUS));
         Double caloriesminus = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_CALORIESMINUS));
         Double quantitywater = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_QUANTITY_WATER));
-        Double weightfood = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_QUANTITY_WATER));
+        Double weightfood = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_WEIGHT_FOOD));
         Integer gender = cursor.getInt(cursor.getColumnIndex(CalorieContract.Calorie.COL_GENDER));
         Double weight = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_WEIGHT));
         Double age = cursor.getDouble(cursor.getColumnIndex(CalorieContract.Calorie.COL_AGE));
@@ -111,11 +112,6 @@ public class CalorieDAO {
 
         return new Calorie(id, date, caloriesplus, caloriesminus, quantitywater, weightfood, gender, weight, age, height,activity);
     }
-
-
-    public void Query(View view) {
-    }
-
 
     public int update(String id, Calorie c){
         ContentValues values = getContentValues(c);
@@ -137,6 +133,8 @@ public class CalorieDAO {
         values.put(CalorieContract.Calorie.COL_DATE, c.getDate());
         values.put(CalorieContract.Calorie.COL_CALORIESPLUS, c.getCaloriesplus());
         values.put(CalorieContract.Calorie.COL_CALORIESMINUS, c.getCaloriesminus());
+        values.put(CalorieContract.Calorie.COL_QUANTITY_WATER, c.getQuantitywater());
+        values.put(CalorieContract.Calorie.COL_WEIGHT_FOOD, c.getWeightfood());
         values.put(CalorieContract.Calorie.COL_GENDER, c.getGender());
         values.put(CalorieContract.Calorie.COL_WEIGHT, c.getWeight());
         values.put(CalorieContract.Calorie.COL_AGE, c.getAge());

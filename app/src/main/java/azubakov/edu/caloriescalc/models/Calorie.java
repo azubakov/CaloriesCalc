@@ -20,6 +20,12 @@ public class Calorie {
     private Double height;
     private Integer activity;
 
+
+    public Calorie(String date, Double caloriesplus) {
+        this.date = date;
+        this.caloriesplus = caloriesplus;
+    }
+
     public Calorie(String date, Double caloriesplus, Double caloriesminus,
                    Double quantitywater, Double weightfood, Integer gender,
                    Double weight, Double age, Double height,

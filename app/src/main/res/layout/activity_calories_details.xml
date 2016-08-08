@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.CaloriesDetailsActivity">
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/etDate"
+    android:hint="@string/date"
+    android:fontFamily="casual"
+    android:textSize="@dimen/textSize"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:inputType="text"
+    />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCaloriesPlus"
+        android:hint="Calories plus - from food per day"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etDate"
+        android:inputType="numberDecimal"
+        />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCaloriesMinus"
+        android:hint="Calories minus - from phisical activity"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etCaloriesPlus"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etQuantityWater"
+        android:hint="Quantity water per day in ml."
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etCaloriesMinus"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWeightFood"
+        android:hint="Weight food per day in gr."
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etQuantityWater"
+        android:inputType="numberDecimal"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGender"
+        android:hint="@string/gender"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etWeightFood"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWeight"
+        android:hint="@string/weight"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_below="@+id/etGender"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAge"
+        android:layout_below="@+id/etWeight"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:hint="@string/Age"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etHeight"
+        android:hint="@string/height"
+        android:layout_below="@+id/etAge"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etActivity"
+        android:layout_below="@+id/etHeight"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/activity"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="save"
+        android:id="@+id/btnSaveOrUpdate"
+        android:layout_below="@+id/etActivity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
