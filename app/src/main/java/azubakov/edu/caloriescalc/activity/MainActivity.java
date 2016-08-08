@@ -567,7 +567,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Delete(View view) {
         CalorieDAO dao = new CalorieDAO(this);
-        int rowsAffected = dao.delete("2");
+        int rowsAffected = dao.delete("3");
         Toast.makeText(MainActivity.this, "" + rowsAffected, Toast.LENGTH_SHORT).show();
     }
 

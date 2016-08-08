@@ -386,7 +386,7 @@
             android:layout_height="wrap_content"
             android:text="@string/delete"
             android:id="@+id/btnDelete"
-            android:onClick="Del"
+            android:onClick="Delete"
             android:layout_weight="1"
             />
 
