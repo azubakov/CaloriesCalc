@@ -6,6 +6,7 @@ package azubakov.edu.caloriescalc.db;
 public class CalorieContract {
     public class Calorie{
         //defining variables of database
+        //stam checking
         public static final String TABLE_NAME = "Calories";
         public static final String COL_ID = "_id";
         public static final String COL_DATE = "date";
