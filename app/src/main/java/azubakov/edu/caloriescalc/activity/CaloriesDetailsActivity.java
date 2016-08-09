@@ -68,6 +68,13 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
     public void save(View view) {
        CalorieDAO dao = new CalorieDAO(this);
 
+        if (!isValidInputDate() ||
+                !isValidInputCaloriePlus() || !isValidInputCalorieMinus() ||
+                !isValidInputQuantityWater() ||   !isValidInputGender() ||
+                !isValidInputWeight() || !isValidInputAge() ||
+                !isValidHeight() || !isValidInputActivity())
+            return;
+
         Calorie c = new Calorie(etDate.getText().toString(),
                                   Double.valueOf(etCaloriesPlus.getText().toString()),
                                   Double.valueOf(etCaloriesMinus.getText().toString()),
@@ -90,4 +97,167 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
         startActivity(mainIntent);
 
     }
+
+
+    private Integer getGender()
+    {
+        String GenderString = etGender.getText().toString();
+        Integer Gender = Integer.valueOf(GenderString);
+        return Gender;
+    }
+
+
+    private Double getWeight()
+    {
+        String WeightString = etWeight.getText().toString();
+        Double Weight = Double.valueOf(WeightString);
+        return Weight;
+    }
+
+    private Double getAge()
+    {
+        String AgeString = etAge.getText().toString();
+        Double Age = Double.valueOf(AgeString);
+        return Age;
+    }
+
+    private Double getHeight()
+    {
+        String HeightString = etHeight.getText().toString();
+        Double Height = Double.valueOf(HeightString);
+        return Height;
+    }
+
+
+    public String getDate()
+    {
+        String etDateString =  etDate.getText().toString();
+        return etDateString;
+    }
+
+
+
+    public Double getCaloriePlus()
+    {
+        String etCaloriesPlusString =  etCaloriesPlus.getText().toString();
+        Double CaloriesPlus = Double.valueOf(etCaloriesPlusString);
+        return CaloriesPlus;
+    }
+
+    public Double getCalorieMinus()
+    {
+        String etCaloriesMinusString =  etCaloriesMinus.getText().toString();
+        Double CaloriesMinus = Double.valueOf(etCaloriesMinusString);
+        return CaloriesMinus;
+    }
+
+    public Double getQuantityWater()
+    {
+        String etQuantityWaterString =  etQuantityWater.getText().toString();
+        Double QuantityWater = Double.valueOf(etQuantityWaterString);
+        return QuantityWater;
+    }
+
+    public Double getWeightFood()
+    {
+        String etWeightFoodString =  etWeightFood.getText().toString();
+        Double WeightFood = Double.valueOf(etWeightFoodString);
+        return WeightFood;
+    }
+
+    public Integer getActivity()
+    {
+        String etCaloriesActivityString =  etActivity.getText().toString();
+        Integer Activity = Integer.valueOf(etCaloriesActivityString);
+        return Activity;
+    }
+
+    private boolean isValidInputDate() {
+        boolean etDateValid = getDate().length() >= 2;
+
+        if (!etDateValid)
+            etDate.setError("Date must be at least 1 characters Long");
+
+        return etDateValid;
+    }
+
+    private boolean isValidInputCaloriePlus() {
+        boolean etCaloriesPlusValid = getCaloriePlus() >= 0;
+
+        if (!etCaloriesPlusValid)
+            etCaloriesPlus.setError("CaloriesPlus must be at least more than 0");
+
+        return etCaloriesPlusValid;
+    }
+
+    private boolean isValidInputCalorieMinus() {
+        boolean etCaloriesMinusValid = getCalorieMinus() >= 0;
+
+
+        if (!etCaloriesMinusValid)
+            etCaloriesMinus.setError("CaloriesMinus must be more than 0");
+
+        return etCaloriesMinusValid;
+    }
+
+    private boolean isValidInputQuantityWater() {
+        boolean etQuantityWaterValid = getQuantityWater() >= 0;
+
+
+        if (!etQuantityWaterValid)
+            etCaloriesMinus.setError("CaloriesMinus must be more than 0");
+
+        return etQuantityWaterValid;
+    }
+
+
+
+    private boolean isValidInputGender() {
+        boolean etCaloriesGenderValid = getGender() ==1 || getGender() == 2;
+
+
+        if (!etCaloriesGenderValid)
+            etGender.setError("Gender must be from 1 to 2");
+
+        return etCaloriesGenderValid;
+    }
+
+    private boolean isValidInputWeight() {
+        boolean etCaloriesWeightValid = getWeight() >= 0;
+
+        if (!etCaloriesWeightValid)
+            etWeight.setError("Weight must be more than 0");
+
+        return etCaloriesWeightValid;
+    }
+
+    private boolean isValidInputAge() {
+        boolean etCaloriesAge = getAge() >= 0;
+
+        if (!etCaloriesAge)
+            etAge.setError("Age must be more than 0");
+
+        return etCaloriesAge;
+    }
+
+    private boolean isValidHeight() {
+        boolean etCaloriesHeight = getHeight() >= 0;
+
+        if (!etCaloriesHeight)
+            etHeight.setError("Age must be more than 0");
+
+        return etCaloriesHeight;
+    }
+
+    private boolean isValidInputActivity() {
+        boolean etCaloriesActivity = getActivity() == 1 || getActivity() == 2 ||
+                getActivity() == 3 || getActivity() == 4 || getActivity() == 5;
+
+        if (!etCaloriesActivity)
+            etActivity.setError("Activity be from 1 to 5");
+
+        return etCaloriesActivity;
+    }
+
+
 }
