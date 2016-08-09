@@ -43,14 +43,14 @@
 
     <include layout="@layout/content_calorie_db" />
 
-    <android.support.design.widget.FloatingActionButton
+  <!--  <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email"
         app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end" />
+        app:layout_anchorGravity="bottom|end" />-->
 
 
 
@@ -60,6 +60,7 @@
         android:layout_height="wrap_content"
         android:onClick="gotoDetails"
         android:src="@drawable/ic_add_24dp"
+        app:backgroundTint="#f57b08"
         app:layout_anchor="@+id/calorieRecycler"
         app:layout_anchorGravity="bottom|end"
         android:layout_margin="20dp"/>
