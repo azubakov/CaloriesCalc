@@ -49,7 +49,7 @@ public class resultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         findViews();
-
+        //to take from intent
         Intent intent = getIntent();
         data = intent.getStringExtra("data");
         String caloriesplusstring = intent.getStringExtra("caloriesplus");
