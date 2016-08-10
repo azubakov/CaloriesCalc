@@ -5,7 +5,7 @@
     <string name="gender">Gender: Male=1 or Female=2</string>
     <string name="Age">Age in years</string>
     <string name="height">Height in sm.</string>
-    <string name="activity">1-passive lifestyle;2-moderate;3-avg;4-active;5-very active</string>
+    <string name="activity">1-5 style of life 1-not active</string>
     <string name="firstname">FirstName</string>
     <string name="secondname">SecondName</string>
     <string name="date">Date</string>

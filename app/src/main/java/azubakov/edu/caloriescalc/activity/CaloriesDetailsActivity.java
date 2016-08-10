@@ -73,7 +73,7 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
             etGender.setText(c.getGender().toString());
             etWeight.setText(c.getWeight().toString());
             etAge.setText(c.getAge().toString());
-            etHeight.setText(c.getAge().toString());
+            etHeight.setText(c.getHeight().toString());
             etActivity.setText(c.getActivity().toString());
 
         }
@@ -84,7 +84,28 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
 
     public void Calculate(View view) {
 
-        Double Weight = getWeight();
+        if (!isValidInputDate() ||
+                !isValidInputCaloriePlus() || !isValidInputCalorieMinus() ||
+                !isValidInputQuantityWater() || !isValidInputWeightFood() ||
+                !isValidInputGender() || !isValidInputWeight() ||
+                !isValidInputAge() ||  !isValidHeight() || !isValidInputActivity())
+            return;
+
+
+        Intent intent = new Intent(this, resultActivity.class);
+        intent.putExtra("date", etDate.getText().toString());
+        intent.putExtra("caloriesplus", etCaloriesPlus.getText().toString());
+        intent.putExtra("caloriesminus", etCaloriesMinus.getText().toString());
+        intent.putExtra("quantitywater", etQuantityWater.getText().toString());
+        intent.putExtra("weightfood", etWeightFood.getText().toString());
+        intent.putExtra("gender", etGender.getText().toString());
+        intent.putExtra("weight", etWeight.getText().toString());
+        intent.putExtra("age", etAge.getText().toString());
+        intent.putExtra("height", etHeight.getText().toString());
+        intent.putExtra("activity", etActivity.getText().toString());
+        startActivity(intent);
+
+        /* Double Weight = getWeight();
         Double Height = getHeight();
 
         //Calculate BMI
@@ -633,4 +654,8 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
     }
 
 
+    public void back(View view) {
+        Intent intent = new Intent(this, CalorieRecyclerActivity.class);
+        startActivity(intent);
+    }
 }

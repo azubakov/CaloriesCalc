@@ -7,6 +7,287 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:layout_margin="10dp"
+    android:id="@+id/layout"
     tools:context=".activity.resultActivity">
 
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHarBenCarOld"
+        android:text="HarOld: "
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResultHarBenCarOld"
+        android:text="ResHarOld: "
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/tvHarBenCarOld"
+        android:layout_toRightOf="@+id/tvHarBenCarOld"
+        android:layout_toEndOf="@+id/tvHarBenCarOld" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HarNew: "
+        android:id="@+id/tvHarBenCarNew"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvHarBenCarOld"
+        android:layout_alignRight="@+id/tvHarBenCarOld"
+        android:layout_alignEnd="@+id/tvHarBenCarOld" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvHarBenCarNew"
+        android:layout_toEndOf="@+id/tvHarBenCarNew"
+        android:text="ResHarNew: "
+        android:id="@+id/tvResultHarBenCarNew"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:layout_toRightOf="@+id/tvHarBenCarNew"
+        android:padding="5dp"
+        android:textStyle="bold"
+     />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miffilin: "
+        android:id="@+id/tvMif"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvHarBenCarNew"
+        android:layout_alignRight="@+id/tvHarBenCarNew"
+        android:layout_alignEnd="@+id/tvHarBenCarNew" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHarBenCarNew"
+        android:layout_toEndOf="@+id/tvHarBenCarNew"
+        android:text="ResMif: "
+        android:id="@+id/tvResultMif"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:layout_toRightOf="@+id/tvMif"
+        android:padding="5dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average: "
+        android:id="@+id/tvAvg"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvMif"
+        android:layout_alignLeft="@+id/tvMif"
+        android:layout_alignStart="@+id/tvMif" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ResAvg "
+        android:id="@+id/tvResAvr"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/tvResultMif"
+        android:layout_alignRight="@+id/tvRecomend"
+        android:layout_alignEnd="@+id/tvRecomend" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum: "
+        android:id="@+id/tvMin"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvAvg"
+        android:layout_alignLeft="@+id/tvMif"
+        android:layout_alignStart="@+id/tvMif" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResAvr"
+        android:layout_toRightOf="@+id/tvMin"
+        android:layout_toEndOf="@+id/tvMin"
+        android:text="ResMin: "
+        android:id="@+id/tvResMin"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum: "
+        android:id="@+id/tvMax"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvMin"
+        android:layout_alignLeft="@+id/tvMin"
+        android:layout_alignStart="@+id/tvMin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ResMax: "
+        android:id="@+id/tvResMax"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvResMin"
+        android:layout_alignLeft="@+id/tvResMin"
+        android:layout_alignStart="@+id/tvResMin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI: "
+        android:id="@+id/tvBmi"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvResultBmi"
+        android:layout_alignLeft="@+id/tvAvg"
+        android:layout_alignStart="@+id/tvAvg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:id="@+id/tvResultBmi"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvResult1Bmi"
+        android:layout_toRightOf="@+id/tvBmi"
+        android:layout_toEndOf="@+id/tvBmi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ResDesBmi: "
+        android:id="@+id/tvResult1Bmi"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvResMax"
+        android:layout_toRightOf="@+id/tvResultBmi"
+        android:layout_toEndOf="@+id/tvResultBmi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBmi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Calories Per Day: "
+        android:id="@+id/tvRecomend"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:textColor="#f40808"
+        android:padding="5dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvResult1Bmi"
+        android:layout_toRightOf="@+id/tvRecomend"
+        android:layout_toEndOf="@+id/tvRecomend"
+        android:id="@+id/tvResRecomend"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:textColor="#f40808"
+        android:text="Result "
+        android:padding="5dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRecomend"
+        android:layout_alignLeft="@+id/tvRecomend"
+        android:layout_alignStart="@+id/tvRecomend"
+        android:text="Extra Per Day: "
+        android:id="@+id/tvRecomendExtra"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#f40808"
+        android:padding="5dp"
+        android:textSize="@dimen/textSize1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvRecomendExtra"
+        android:layout_toRightOf="@+id/tvRecomendExtra"
+        android:layout_toEndOf="@+id/tvRecomendExtra"
+        android:text="Result "
+        android:id="@+id/tvResRecomendExtra"
+        android:fontFamily="casual"
+        android:textSize="@dimen/textSize1"
+        android:textColor="#f40808"
+        android:padding="5dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:onClick="back"
+        android:layout_below="@+id/tvRecomendExtra"
+        android:layout_alignLeft="@+id/tvBmi"
+        android:layout_alignStart="@+id/tvBmi" />
+
+
+    <!--android:src="@drawable/ic_keyboard_backspace_24dp"-->
 </RelativeLayout>

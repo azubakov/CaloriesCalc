@@ -20,6 +20,7 @@
     android:hint="@string/date"
     android:fontFamily="casual"
     android:textSize="@dimen/textSize"
+    android:padding="5dp"
     android:layout_alignParentTop="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
@@ -34,6 +35,7 @@
         android:hint="Calories plus - from food per day"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etDate"
         android:inputType="numberDecimal"
         />-->
@@ -45,6 +47,7 @@
         android:hint="Calories minus - from phisical activity"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etCaloriesPlus"
         android:inputType="numberDecimal"
         />
@@ -56,6 +59,7 @@
         android:hint="Quantity water per day in ml."
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etCaloriesMinus"
         android:inputType="numberDecimal"
         />
@@ -67,6 +71,7 @@
         android:hint="Weight food per day in gr."
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etQuantityWater"
         android:inputType="numberDecimal"
         />
@@ -79,6 +84,7 @@
         android:hint="@string/gender"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etWeightFood"
         android:inputType="number"
         />
@@ -90,6 +96,7 @@
         android:hint="@string/weight"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_below="@+id/etGender"
         android:layout_centerHorizontal="true"
         android:inputType="numberDecimal"
@@ -104,6 +111,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:hint="@string/Age"
         android:inputType="numberDecimal"
         />
@@ -116,6 +124,7 @@
         android:layout_below="@+id/etAge"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:layout_centerHorizontal="true"
         android:inputType="numberDecimal"
         />
@@ -129,231 +138,34 @@
         android:hint="@string/activity"
         android:fontFamily="casual"
         android:textSize="@dimen/textSize"
+        android:padding="5dp"
         android:inputType="number"
         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HarOld: "
-        android:id="@+id/tvHarBenCarOld"
-        android:layout_below="@+id/etActivity"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ResHarOld"
-        android:id="@+id/tvResultHarBenCarOld"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_alignTop="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvHarBenCarOld"
-        android:layout_toEndOf="@+id/tvHarBenCarOld" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" HarNew: "
-        android:id="@+id/tvHarBenCarNew"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_toRightOf="@+id/tvResultHarBenCarOld"
-        android:layout_below="@+id/etActivity" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ResHarNew"
-        android:id="@+id/tvResultHarBenCarNew"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_toRightOf="@+id/tvHarBenCarNew"
-        android:layout_below="@+id/etActivity"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Miffilin: "
-        android:id="@+id/tvMif"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_toRightOf="@+id/tvResultHarBenCarNew"
-        android:layout_below="@+id/etActivity" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" ResMif: "
-        android:id="@+id/tvResultMif"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_toRightOf="@+id/tvMif"
-        android:layout_below="@+id/etActivity" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Avr: "
-        android:id="@+id/tvAvg"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ResAvg "
-        android:id="@+id/tvResAvr"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvAvg"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Min: "
-        android:id="@+id/tvMin"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvResAvr"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ResMin: "
-        android:id="@+id/tvResMin"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvMin"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Max: "
-        android:id="@+id/tvMax"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvResMin"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" ResMax: "
-        android:id="@+id/tvResMax"
-        android:layout_below="@+id/tvHarBenCarOld"
-        android:layout_toRightOf="@+id/tvMax"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BMI: "
-        android:id="@+id/tvBmi"
-        android:layout_below="@+id/tvAvg"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:fontFamily="casual"
-        android:textStyle="bold|italic"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result:"
-        android:id="@+id/tvResultBmi"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:textStyle="bold"
-        android:layout_alignTop="@+id/tvBmi"
-        android:layout_toRightOf="@+id/tvBmi"
-        android:layout_toEndOf="@+id/tvBmi" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ResDesBmi:"
-        android:id="@+id/tvResult1Bmi"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:layout_alignTop="@+id/tvResultBmi"
-        android:layout_toRightOf="@+id/tvResultBmi"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Calories Per Day: "
-        android:id="@+id/tvRecomend"
-        android:layout_below="@+id/tvMin"
-        android:layout_toRightOf="@+id/tvResult1Bmi"
-        android:fontFamily="casual"
-        android:textStyle="bold|italic"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Result "
-        android:id="@+id/tvResRecomend"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:textStyle="bold"
-        android:layout_below="@+id/tvMin"
-        android:layout_toRightOf="@+id/tvRecomend"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" For consideration Calories Per Day: "
-        android:id="@+id/tvRecomendExtra"
-        android:layout_below="@+id/tvBmi"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:fontFamily="casual"
-        android:textStyle="bold|italic"
-        android:textSize="@dimen/textSize"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Result "
-        android:id="@+id/tvResRecomendExtra"
-        android:fontFamily="casual"
-        android:textSize="@dimen/textSize"
-        android:textStyle="bold"
-        android:layout_below="@+id/tvBmi"
-        android:layout_toRightOf="@+id/tvRecomendExtra"/>
 
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="5dp"
         android:layout_margin="5dp"
-        android:layout_below="@+id/tvResRecomendExtra"
-        >
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/etActivity"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="back"
+            android:id="@+id/btnBack"
+            android:background="#1eec0c"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
 
         <Button
             android:layout_width="0dp"
@@ -381,5 +193,6 @@
 
 
     </LinearLayout>
+
 
 </RelativeLayout>
