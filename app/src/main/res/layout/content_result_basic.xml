@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,15 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:padding="10dp"
-    android:textStyle="bold"
-    android:layout_margin="10dp"
-    android:id="@+id/layout"
-    tools:context=".activity.resultActivity">
-
-
-
-
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="azubakov.edu.caloriescalc.activity.ResultBasicActivity"
+    tools:showIn="@layout/activity_result_basic">
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,7 +65,7 @@
         android:layout_toRightOf="@+id/tvHarBenCarNew"
         android:padding="5dp"
         android:textStyle="bold"
-     />
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -188,6 +183,7 @@
         android:textSize="@dimen/textSize1"
         android:padding="5dp"
         android:textStyle="bold"
+        android:textColor="#f40808"
         android:layout_alignTop="@+id/tvResultBmi"
         android:layout_alignLeft="@+id/tvAvg"
         android:layout_alignStart="@+id/tvAvg" />
@@ -201,6 +197,7 @@
         android:textSize="@dimen/textSize1"
         android:padding="5dp"
         android:textStyle="bold"
+        android:textColor="#f40808"
         android:layout_alignTop="@+id/tvResult1Bmi"
         android:layout_toRightOf="@+id/tvBmi"
         android:layout_toEndOf="@+id/tvBmi" />
@@ -214,6 +211,7 @@
         android:textSize="@dimen/textSize1"
         android:padding="5dp"
         android:textStyle="bold"
+        android:textColor="#f40808"
         android:layout_below="@+id/tvResMax"
         android:layout_toRightOf="@+id/tvResultBmi"
         android:layout_toEndOf="@+id/tvResultBmi" />
@@ -233,7 +231,7 @@
         android:textStyle="bold"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvResult1Bmi"
@@ -289,5 +287,7 @@
         android:layout_alignStart="@+id/tvBmi" />
 
 
-    <!--android:src="@drawable/ic_keyboard_backspace_24dp"-->
+
+
+
 </RelativeLayout>

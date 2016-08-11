@@ -4,20 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import azubakov.edu.caloriescalc.R;
 
-public class resultActivity extends AppCompatActivity {
+public class ResultBasicActivity extends AppCompatActivity {
 
 
 
 
 
-    EditText etDate, etCaloriesPlus, etCaloriesMinus, etQuantityWater;
+    EditText etDate;
+    //EditText        etCaloriesPlus, etCaloriesMinus, etQuantityWater;
     EditText etWeightFood, etGender,etWeight,etAge,etHeight, etActivity;
     TextView tvBmi;
     TextView tvResultBmi;
@@ -46,7 +45,7 @@ public class resultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_basic);
 
         findViews();
         //to take from intent
@@ -405,7 +404,7 @@ public class resultActivity extends AppCompatActivity {
 
 
     public void back(View view) {
-        Intent intent = new Intent(this, CaloriesDetailsActivity.class);
+        Intent intent = new Intent(this, CaloriesDetailsBasicActivity.class);
         startActivity(intent);
     }
 }

@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import azubakov.edu.caloriescalc.R;
-import azubakov.edu.caloriescalc.activity.CaloriesDetailsActivity;
+import azubakov.edu.caloriescalc.activity.CaloriesDetailsBasicActivity;
 import azubakov.edu.caloriescalc.db.CalorieDAO;
 import azubakov.edu.caloriescalc.models.Calorie;
 
@@ -76,7 +76,7 @@ public class CalorieAdapter extends RecyclerView.Adapter<CalorieAdapter.CalorieV
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, CaloriesDetailsActivity.class);
+                Intent intent = new Intent(context, CaloriesDetailsBasicActivity.class);
                 intent.putExtra("_ID",c.getId());
                 context.startActivity(intent);
             }

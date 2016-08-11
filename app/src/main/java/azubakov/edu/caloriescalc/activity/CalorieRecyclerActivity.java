@@ -81,7 +81,7 @@ public class CalorieRecyclerActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_calorie_db, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -93,7 +93,8 @@ public class CalorieRecyclerActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        //if (id == R.id.action_settings) {
+        if (id == R.id.action_logout) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -101,7 +102,8 @@ public class CalorieRecyclerActivity extends AppCompatActivity {
 
 
     public void gotoDetails(View view) {
-        Intent intent = new Intent(this, CaloriesDetailsActivity.class);
+        //Intent intent = new Intent(this, CaloriesDetailsActivity_old.class);
+        Intent intent = new Intent(this, CaloriesDetailsBasicActivity.class);
         startActivity(intent);
     }
 }

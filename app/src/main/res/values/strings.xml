@@ -18,5 +18,8 @@
     <string name="title_activity_calorie_db">CalorieDBActivity</string>
     <string name="date1">Date</string>
     <string name="water">Water</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_list">UserListActivity</string>
+    <string name="title_activity_result_basic">ResultBasicActivity</string>
 
 </resources>

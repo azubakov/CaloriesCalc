@@ -13,7 +13,7 @@ import azubakov.edu.caloriescalc.R;
 import azubakov.edu.caloriescalc.db.CalorieDAO;
 import azubakov.edu.caloriescalc.models.Calorie;
 
-public class CaloriesDetailsActivity extends AppCompatActivity {
+public class CaloriesDetailsBasicActivity extends AppCompatActivity {
 
     EditText etDate, etCaloriesPlus, etCaloriesMinus, etQuantityWater;
     EditText etWeightFood, etGender,etWeight,etAge,etHeight, etActivity;
@@ -47,7 +47,7 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calories_details);
+        setContentView(R.layout.activity_calories_details_basic);
 
 
         //Registration elements
@@ -92,7 +92,7 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
             return;
 
 
-        Intent intent = new Intent(this, resultActivity.class);
+        Intent intent = new Intent(this, ResultBasicActivity.class);
         intent.putExtra("date", etDate.getText().toString());
         intent.putExtra("caloriesplus", etCaloriesPlus.getText().toString());
         intent.putExtra("caloriesminus", etCaloriesMinus.getText().toString());
@@ -190,11 +190,11 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
     }
 
     public void save(View view) {
-       CalorieDAO dao = new CalorieDAO(this);
+        CalorieDAO dao = new CalorieDAO(this);
 
         /*if (!isValidInputCaloriePlus())
             return;*/
-              if (!isValidInputDate() ||
+        if (!isValidInputDate() ||
                 !isValidInputCaloriePlus() || !isValidInputCalorieMinus() ||
                 !isValidInputQuantityWater() || !isValidInputWeightFood() ||
                 !isValidInputGender() || !isValidInputWeight() ||
@@ -202,16 +202,16 @@ public class CaloriesDetailsActivity extends AppCompatActivity {
             return;
 
         Calorie c = new Calorie(etDate.getText().toString(),
-                                  Double.valueOf(etCaloriesPlus.getText().toString()),
-                                  Double.valueOf(etCaloriesMinus.getText().toString()),
-                                  Double.valueOf(etQuantityWater.getText().toString()),
-                                  Double.valueOf(etWeightFood.getText().toString()),
-                                  Integer.valueOf(etGender.getText().toString()),
-                                  Double.valueOf(etWeight.getText().toString()),
-                                  Double.valueOf(etAge.getText().toString()),
-                                  Double.valueOf(etHeight.getText().toString()),
-                                  Integer.valueOf(etActivity.getText().toString())
-                                  );
+                Double.valueOf(etCaloriesPlus.getText().toString()),
+                Double.valueOf(etCaloriesMinus.getText().toString()),
+                Double.valueOf(etQuantityWater.getText().toString()),
+                Double.valueOf(etWeightFood.getText().toString()),
+                Integer.valueOf(etGender.getText().toString()),
+                Double.valueOf(etWeight.getText().toString()),
+                Double.valueOf(etAge.getText().toString()),
+                Double.valueOf(etHeight.getText().toString()),
+                Integer.valueOf(etActivity.getText().toString())
+        );
         //if (_id!=null) call update instead.
         if (id != null) {
             dao.update(id, c);
