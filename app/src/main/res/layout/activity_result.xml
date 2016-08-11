@@ -17,7 +17,7 @@
 
 
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvHarBenCarOld"
@@ -32,7 +32,7 @@
 
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvResultHarBenCarOld"
@@ -45,7 +45,7 @@
         android:layout_toRightOf="@+id/tvHarBenCarOld"
         android:layout_toEndOf="@+id/tvHarBenCarOld" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HarNew: "
@@ -58,7 +58,7 @@
         android:layout_alignRight="@+id/tvHarBenCarOld"
         android:layout_alignEnd="@+id/tvHarBenCarOld" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tvHarBenCarNew"
@@ -72,7 +72,7 @@
         android:textStyle="bold"
      />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Miffilin: "
@@ -85,7 +85,7 @@
         android:layout_alignRight="@+id/tvHarBenCarNew"
         android:layout_alignEnd="@+id/tvHarBenCarNew" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvHarBenCarNew"
@@ -100,7 +100,7 @@
 
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Average: "
@@ -113,7 +113,7 @@
         android:layout_alignLeft="@+id/tvMif"
         android:layout_alignStart="@+id/tvMif" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ResAvg "
@@ -126,7 +126,7 @@
         android:layout_alignRight="@+id/tvRecomend"
         android:layout_alignEnd="@+id/tvRecomend" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Minimum: "
@@ -139,7 +139,7 @@
         android:layout_alignLeft="@+id/tvMif"
         android:layout_alignStart="@+id/tvMif" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvResAvr"
@@ -153,7 +153,7 @@
         android:textStyle="bold"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maximum: "
@@ -166,7 +166,7 @@
         android:layout_alignLeft="@+id/tvMin"
         android:layout_alignStart="@+id/tvMin" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ResMax: "
@@ -179,7 +179,7 @@
         android:layout_alignLeft="@+id/tvResMin"
         android:layout_alignStart="@+id/tvResMin" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BMI: "
@@ -192,7 +192,7 @@
         android:layout_alignLeft="@+id/tvAvg"
         android:layout_alignStart="@+id/tvAvg" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Result: "
@@ -205,7 +205,7 @@
         android:layout_toRightOf="@+id/tvBmi"
         android:layout_toEndOf="@+id/tvBmi" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ResDesBmi: "
@@ -218,7 +218,7 @@
         android:layout_toRightOf="@+id/tvResultBmi"
         android:layout_toEndOf="@+id/tvResultBmi" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBmi"
@@ -248,7 +248,7 @@
         android:textStyle="bold"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvRecomend"
@@ -263,7 +263,7 @@
         android:textSize="@dimen/textSize1"
         />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tvRecomendExtra"
