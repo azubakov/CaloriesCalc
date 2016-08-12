@@ -55,6 +55,10 @@
         <activity
             android:name=".activity.ResultBasicActivity"
             android:label="@string/title_activity_result_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CalorieNavDrawerActivity"
+            android:label="@string/title_activity_calorie_nav_drawer"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

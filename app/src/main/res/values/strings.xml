@@ -21,5 +21,9 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_user_list">UserListActivity</string>
     <string name="title_activity_result_basic">ResultBasicActivity</string>
+    <string name="title_activity_calorie_nav_drawer">Calorie calculator</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

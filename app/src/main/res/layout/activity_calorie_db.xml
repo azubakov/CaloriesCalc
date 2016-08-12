@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:src="@drawable/header_music"
+                android:src="@drawable/salad2"
                 />
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -66,6 +66,37 @@
         app:layout_anchorGravity="bottom|end"
         android:layout_margin="20dp"/>
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/calorieRecycler"
+        app:layout_anchorGravity="bottom"
+        android:text="back"
+        android:layout_margin="20dp"
+        android:onClick="backDrNav"
+
+        />
+
+    <!-- <android.support.design.widget.FloatingActionButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="backDrawNav"
+      android:id="@+id/fabB"
+      app:layout_anchor="@+id/calorieRecycler"
+      app:layout_anchorGravity="bottom|start"
+      android:layout_margin="20dp"-->
+
+      />
+
+
+    <!--  <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#08f524"
+        android:src="@drawable/ic_reply_24dp"
+        android:onClick="backDrawNav" />-->
 
 </android.support.design.widget.CoordinatorLayout>
 

@@ -55,7 +55,8 @@ public class UserListsActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(UserListsActivity.this, "Hello, " + currentUser.getEmail(), Toast.LENGTH_SHORT).show();
 
-                    gotoRecycler();
+                    gotoNavDrawer();
+                    ////gotoRecycler();
 
                     // initRecycler();
                 }
@@ -68,6 +69,13 @@ public class UserListsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CalorieRecyclerActivity.class);
         startActivity(intent);
     }
+
+    public void gotoNavDrawer() {
+        //Intent intent = new Intent(this, CaloriesDetailsActivity_old.class);
+        Intent intent = new Intent(this, CalorieNavDrawerActivity.class);
+        startActivity(intent);
+    }
+
 
     /*void initRecycler(){
 
