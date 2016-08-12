@@ -70,7 +70,8 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_logout) {
+            gotoLoginActivity();
             return true;
         }
 
@@ -85,18 +86,20 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            gotoRecycler();
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
-
+            gotoRecycler();
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        }
+
+        /*else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -108,4 +111,11 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
         Intent intent = new Intent(this, CalorieRecyclerActivity.class);
         startActivity(intent);
     }
+
+    public void gotoLoginActivity() {
+        //Intent intent = new Intent(this, CaloriesDetailsActivity_old.class);
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
 }

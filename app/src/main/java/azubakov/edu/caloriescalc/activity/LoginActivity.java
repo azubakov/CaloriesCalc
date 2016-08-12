@@ -1,15 +1,26 @@
 //package my.tomer.edu.firedatabaseloggin3.activities;
 package azubakov.edu.caloriescalc.activity;
 
+import android.animation.ObjectAnimator;
+import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Layout;
+import android.transition.Explode;
 import android.view.View;
+import android.view.animation.BounceInterpolator;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -30,6 +41,11 @@ import tomer.edu.firedemo.models.User;*/
 public class LoginActivity extends AppCompatActivity {
     EditText etEmail;
     EditText etPassword;
+    ImageView imageView;
+    //FloatingActionButton fab;
+    RelativeLayout layout;
+    Button btnLogin;
+    Button btnRegister;
 
 
     @Override
@@ -39,7 +55,24 @@ public class LoginActivity extends AppCompatActivity {
 
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        layout = (RelativeLayout) findViewById(R.id.layout);
+        btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnRegister = (Button) findViewById(R.id.btnRegister);
+        /*  fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // animateExplode();
+            }
+        });*/
+
+
+
         hideKeyboardWhenNeeded();
+
     }
 
     /**
@@ -160,5 +193,71 @@ public class LoginActivity extends AppCompatActivity {
         return etPassword.getText().toString();
     }
 
+    /*@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void animateExplode() {
+        Intent intent = new Intent(this, CalorieNavDrawerActivity.class);
 
+        //set the transition
+        getWindow().setExitTransition(new Explode());
+        Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(this, fab, "fab").toBundle();
+
+        startActivity(intent, bundle);
+    }*/
+
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+
+
+
+        //moveViewOut(etEmail, etPassword, btnLogin, btnRegister);
+       // moveViewOut(etEmail, etPassword, btnLogin,btnRegister);
+        moveViewOut(etEmail, etPassword, btnLogin, btnRegister);
+        animateLogin();
+
+    }
+
+
+
+    private void animateLogin() {
+        float xMid = layout.getWidth() / 2;
+        float xet = xMid - etEmail.getWidth() / 2;
+        float x2 = xet + etEmail.getWidth();
+        float xBtn = x2 - btnLogin.getWidth();
+
+        ObjectAnimator etEmailAnimator = ObjectAnimator.ofFloat(etEmail, "X", xet);
+        etEmailAnimator.setInterpolator(new BounceInterpolator());
+        etEmailAnimator.setDuration(1000);
+        etEmailAnimator.start();
+
+
+        ObjectAnimator etPasswordAnimator = ObjectAnimator.ofFloat(etPassword, "X", xet);
+        etPasswordAnimator.setInterpolator(new BounceInterpolator());
+        etPasswordAnimator.setDuration(1000);
+        etPasswordAnimator.setStartDelay(700);
+        etPasswordAnimator.start();
+
+
+        ObjectAnimator btnAnimator = ObjectAnimator.ofFloat(btnLogin, "X", xBtn);
+        btnAnimator.setInterpolator(new BounceInterpolator());
+        btnAnimator.setDuration(1000);
+        btnAnimator.setStartDelay(1500);
+        btnAnimator.start();
+
+        ObjectAnimator btnRAnimator = ObjectAnimator.ofFloat(btnRegister, "X", xBtn);
+        btnRAnimator.setInterpolator(new BounceInterpolator());
+        btnRAnimator.setDuration(1000);
+        btnRAnimator.setStartDelay(1500);
+        btnRAnimator.start();
+
+
+    }
+
+
+    void moveViewOut(View... views) {
+        for (View v : views) {
+            v.setX(0 - v.getWidth());
+        }
+    }
 }
