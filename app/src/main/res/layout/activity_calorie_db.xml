@@ -67,7 +67,7 @@
         android:layout_margin="20dp"/>
 
 
-    <Button
+   <!-- <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_anchor="@+id/calorieRecycler"
@@ -76,27 +76,28 @@
         android:layout_margin="20dp"
         android:onClick="backDrNav"
 
-        />
+        />-->
 
-    <!-- <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:onClick="backDrawNav"
+      android:onClick="backDrNav"
       android:id="@+id/fabB"
       app:layout_anchor="@+id/calorieRecycler"
       app:layout_anchorGravity="bottom|start"
-      android:layout_margin="20dp"-->
+      android:layout_margin="20dp"
+      />-->
 
-      />
 
-
-    <!--  <android.support.design.widget.FloatingActionButton
+     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:backgroundTint="#08f524"
         android:src="@drawable/ic_reply_24dp"
-        android:onClick="backDrawNav" />-->
+        android:onClick="backDrNav"
+        app:layout_anchor="@+id/calorieRecycler"
+        />
 
 </android.support.design.widget.CoordinatorLayout>
 
