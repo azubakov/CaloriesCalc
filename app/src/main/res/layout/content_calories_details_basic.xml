@@ -311,7 +311,19 @@
         android:layout_below="@+id/etActivity"
         android:id="@+id/linearLayout">
 
-        <Button
+
+     <!--   <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#08f524"
+            android:src="@drawable/ic_reply_24dp"
+            android:onClick="back"
+
+            />-->
+
+
+    <!--    <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Back"
@@ -321,7 +333,7 @@
             android:layout_weight="1"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true" />-->
 
 
 
@@ -350,8 +362,19 @@
             android:layout_alignParentEnd="true" />
 
 
+
     </LinearLayout>
 
+  <!--  <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#08f524"
+        android:src="@drawable/ic_reply_24dp"
+        android:onClick="back"
+        app:layout_anchor="@id/app_bar"
 
+
+        />-->
 
 </RelativeLayout>

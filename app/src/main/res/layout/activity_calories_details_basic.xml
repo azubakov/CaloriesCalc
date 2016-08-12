@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="Calorie Calculator"
+            app:title="           Calorie Calculator"
             android:touchscreenBlocksFocus="false"
             android:transitionGroup="true"
             android:contextClickable="true" />
@@ -39,5 +39,20 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#08f524"
+        android:src="@drawable/ic_reply_24dp"
+        android:onClick="back"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="center|start"
+
+
+        />
+
+
 
 </android.support.design.widget.CoordinatorLayout>
