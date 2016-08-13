@@ -1,0 +1,203 @@
+{
+  "project_info": {
+    "project_number": "1080601420213",
+    "firebase_url": "https://fdata-966f4.firebaseio.com",
+    "project_id": "fdata-966f4",
+    "storage_bucket": "fdata-966f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080601420213:android:920f7f66e77b9e1b",
+        "android_client_info": {
+          "package_name": "tomer.edu.my"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080601420213-549c6ep5h6bpbdj199ib563sklmc5aqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tomer.edu.my",
+            "certificate_hash": "27558EA6D529AF4749B1662F48DF39E27BFA88CA"
+          }
+        },
+        {
+          "client_id": "1080601420213-43k6akvnri8jcvr8peabukrhumivljhg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tomer.edu.my",
+            "certificate_hash": "ECD38CBA38C3202F7C3E788F1043DBB6DE5B86AD"
+          }
+        },
+        {
+          "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_Ke6CsqTow2ayDxk1Kq7UixpH5jPNSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080601420213:android:af16b47c28eef376",
+        "android_client_info": {
+          "package_name": "my.tomer.edu.firedatabaseloggin2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080601420213-bcqmad7oamv3alfsmpsepfvqbbgu69tf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.tomer.edu.firedatabaseloggin2",
+            "certificate_hash": "27558EA6D529AF4749B1662F48DF39E27BFA88CA"
+          }
+        },
+        {
+          "client_id": "1080601420213-71nrgrm904gjog9c9uipr4bmp5ldclrl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.tomer.edu.firedatabaseloggin2",
+            "certificate_hash": "ECD38CBA38C3202F7C3E788F1043DBB6DE5B86AD"
+          }
+        },
+        {
+          "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_Ke6CsqTow2ayDxk1Kq7UixpH5jPNSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080601420213:android:18291fb50c8fe54f",
+        "android_client_info": {
+          "package_name": "my.tomer.edu.firedatabaseloggin3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080601420213-l6kacfmm9dgdqr8pfij0u31fgpbg73q8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.tomer.edu.firedatabaseloggin3",
+            "certificate_hash": "27558EA6D529AF4749B1662F48DF39E27BFA88CA"
+          }
+        },
+        {
+          "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_Ke6CsqTow2ayDxk1Kq7UixpH5jPNSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080601420213:android:fc847f4d99af9a16",
+        "android_client_info": {
+          "package_name": "azubakov.edu.caloriescalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080601420213-mskjbu29vvht20cagftfuq9ui36uhme8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "azubakov.edu.caloriescalc",
+            "certificate_hash": "27558EA6D529AF4749B1662F48DF39E27BFA88CA"
+          }
+        },
+        {
+          "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_Ke6CsqTow2ayDxk1Kq7UixpH5jPNSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080601420213-qdnok11ugogmdjgsdl1drlvvt6h28mt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
