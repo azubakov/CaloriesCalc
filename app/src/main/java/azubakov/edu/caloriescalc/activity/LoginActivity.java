@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     RelativeLayout layout;
     Button btnLogin;
     Button btnRegister;
+   // FloatingActionButton fabExit;
 
 
     @Override
@@ -59,6 +60,9 @@ public class LoginActivity extends AppCompatActivity {
         layout = (RelativeLayout) findViewById(R.id.layout);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnRegister = (Button) findViewById(R.id.btnRegister);
+
+
+     //   fabExit = (FloatingActionButton) findViewById(R.id.fabExit);
         /*  fab = (FloatingActionButton) findViewById(R.id.fab);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -209,16 +213,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
 
-
-
-        //moveViewOut(etEmail, etPassword, btnLogin, btnRegister);
-       // moveViewOut(etEmail, etPassword, btnLogin,btnRegister);
         moveViewOut(etEmail, etPassword, btnLogin, btnRegister);
         animateLogin();
 
     }
-
-
 
     private void animateLogin() {
         float xMid = layout.getWidth() / 2;
@@ -260,4 +258,16 @@ public class LoginActivity extends AppCompatActivity {
             v.setX(0 - v.getWidth());
         }
     }
+
+
+    public void ExitFinish(View view) {
+        FirebaseAuth.getInstance().signOut();
+         /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            this.finishAffinity();
+        }*/
+        this.finish();
+        System.exit(0);
+        //FirebaseAuth.getInstance().signOut();
+    }
+
 }

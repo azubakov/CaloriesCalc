@@ -2,6 +2,7 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coorLay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -9,6 +10,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
+        android:id="@+id/AppBarLay"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -17,20 +19,35 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:title="                               Calorie Calculator"
+            app:title="         Calories Calc"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--<include layout="@layout/content_login" />-->
-    <include layout="@layout/content_login_animation" />
+  <!--  <include layout="@layout/content_login" />-->
+   <include layout="@layout/content_login_animation"/>
 
-  <!--  <android.support.design.widget.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="top|start"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />-->
+
+        android:src="@drawable/ic_block_24dp"
+        android:onClick="ExitFinish"
+        />
+    <!--android:src="@android:drawable/ic_dialog_email"-->
+  <!--  <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:backgroundTint="#07ece4"
+        android:src="@drawable/ic_block_24dp"
+        android:onClick="ExitFininsh"
+     />-->
+  <!--  android:layout_margin="@dimen/fab_margin"-->
+
 
 </android.support.design.widget.CoordinatorLayout>

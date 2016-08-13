@@ -1,6 +1,7 @@
 package azubakov.edu.caloriescalc.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import azubakov.edu.caloriescalc.R;
 
@@ -58,7 +61,9 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.calorie_nav_drawer, menu);
+        //getMenuInflater().inflate(R.menu.calorie_nav_drawer, menu);
+        ////getMenuInflater().inflate(R.menu.calorie_nav_drawer, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -71,12 +76,24 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
-            gotoLoginActivity();
+            FirebaseAuth.getInstance().signOut();
             return true;
+
+            /*  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                this.finishAffinity();
+            }*/
+          //  finish();
+            //System.exit(0);
+            //gotoUserListActivity();
+            //gotoLoginActivity();
+            //return true;
+
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -118,4 +135,10 @@ public class CalorieNavDrawerActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    private void gotoUserListActivity() {
+        Intent intent = new Intent(this, UserListsActivity.class);
+        startActivity(intent);
+    }
+
 }
+

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+
 import azubakov.edu.caloriescalc.R;
 import azubakov.edu.caloriescalc.adapters.CalorieAdapter;
 import azubakov.edu.caloriescalc.db.CalorieDAO;
